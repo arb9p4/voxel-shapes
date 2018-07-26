@@ -21,6 +21,7 @@ function params = default_voxel_params(params)
 %          - sharpness: Threshold sharpness. Higher values are more crisp.
 %          - torus_R : Major radius of torus
 %          - torus_r : Minor radius of torus
+%          - noise_type : Type of noise {interval, gaussian}
 %          - t_method : Threshold method for visualization {pct, otsu}
 %          - t_pcts : Threshold percentages for visualization
 %          - num_otsu_thresholds : Number of Otsu threshold levels
@@ -82,6 +83,12 @@ end
 % Set the default torus minor radius
 if ~isfield(params, 'torus_r')
     params.torus_r = 0.5;
+end
+
+% Set the default noise type
+if ~isfield(params, 'noise_type')
+    params.noise_type = 'interval';
+%     params.noise_type = 'gaussian';
 end
 
 % Set the default threshold method

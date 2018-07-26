@@ -35,7 +35,13 @@ k = ceil(log2(max([nx, ny, nz])));
 s = 2^k;
 V = zeros(s, s, s);
 for i = 1:k
-    Y = randn(2^i, 2^i, 2^i);
+    if strcmpi(params.noise_type, 'interval')
+        Y = rand(2^i, 2^i, 2^i);
+    elseif strcmpi(params.noise_type, 'gaussian')
+        Y = randn(2^i, 2^i, 2^i);
+    else
+        error('Invalid noise type');
+    end
     X = interp3(Y, k-i+1);
     V = V + X(1:s, 1:s, 1:s) ./ (2^i);
 end
