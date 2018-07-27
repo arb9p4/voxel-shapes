@@ -41,13 +41,13 @@ end
 
 % Set the default coordinate values
 if ~isfield(params, 'Vx')
-    params.Vx = -2:0.1:2;
+    params.Vx = linspace(-3,3,48);
 end
 if ~isfield(params, 'Vy')
-    params.Vy = -2:0.1:2;
+    params.Vy = linspace(-3,3,48);
 end
 if ~isfield(params, 'Vz')
-    params.Vz = -2:0.1:2;
+    params.Vz = linspace(-3,3,48);
 end
 
 % Set the default scale vector
