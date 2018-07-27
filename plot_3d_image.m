@@ -143,7 +143,7 @@ for ti = 1:length(thresholds)
     p.FaceColor = cmap(ci,:);
     
     % Set the transparancy
-    p.FaceAlpha = 1/2^(ti-1);
+    p.FaceAlpha = 0.75/2^(ti-1);
 
 end
 
