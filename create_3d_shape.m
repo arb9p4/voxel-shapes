@@ -19,11 +19,10 @@ function V = create_3d_shape(shapename, params)
 %      Andrew Buck (7/25/2018)
 %%
 
+% Get default values for any missing fields
 if ~exist('params', 'var')
     params = [];
 end
-
-% Get default values for any missing fields
 params = default_voxel_params(params);
 
 % Create the voxel coordinate grids
