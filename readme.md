@@ -2,19 +2,19 @@
 The voxel shape library (VSL) is a collection of MATLAB functions and plotting routines to help generate 3D voxel images of various shapes in different configurations. The library supports modifying the resolution, scale, translation, rotation, and threshold sharpness of the objects. The following types of shapes are implemented:
 
 #### Ellipsoid
-![ellipsoid](img\ellipsoid.png)
+![ellipsoid](img/ellipsoid.png)
 
 #### Cuboid
-![cuboid](img\cuboid.png)
+![cuboid](img/cuboid.png)
 
 #### Cylinder
-![cylinder](img\cylinder.png)
+![cylinder](img/cylinder.png)
 
 #### Cone
-![cone](img\cone.png)
+![cone](img/cone.png)
 
 #### Torus
-![torus](img\torus.png)
+![torus](img/torus.png)
 
 ## Usage
 
@@ -25,5 +25,5 @@ This code has been tested to run with MATLAB 2016a and later. The following exam
 - **example_create_shape_dataset.m** - Shows how to create and plot a dataset of 3D voxel shapes
 - **example_create_shape_mosaic.m** - Creates a mosaic of example 3D shapes using random parameter configurations
 
-![mosaic](img\mosaic.png)
+![mosaic](img/mosaic.png)
 
